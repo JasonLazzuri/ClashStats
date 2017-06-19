@@ -1,5 +1,5 @@
 img{
-  width: 300px;
+  width: 450px;
   display: block;
   margin: auto;
 }
@@ -10,9 +10,27 @@ h2{
 }
 
 
-.page-footer{
-  position: fixed;
-  bottom:0px;
-  height:80px;
-  width:100%;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+
+#button{
+  display: block;
+  margin: auto;
+}
+
+#tweet{
+  width: 300px;
+  position: relative;
+    left: 50px;
+  margin: 20px;
+
 }
