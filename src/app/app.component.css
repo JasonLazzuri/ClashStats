@@ -9,7 +9,15 @@ h2{
   text-align: center;
 }
 
+/*clash of clans logo in the top left corner*/
+#home{
+  width: 150px;
+  position: absolute;
+  left: -180px;
 
+}
+
+/*footer*/
 body {
   display: flex;
   min-height: 100vh;
@@ -19,7 +27,7 @@ body {
 main {
   flex: 1 0 auto;
 }
-
+/*end footer*/
 
 
 #button{
