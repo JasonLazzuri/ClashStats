@@ -4,9 +4,15 @@ img{
   margin: auto;
 }
 
+@font-face {
+  font-family: 'clashFont';
+  src: url('webfont.ttf')  format('truetype');
+}
+
 h2{
-  font-family: 'Bungee Shade', cursive;
+  /*font-family: 'Bungee Shade', cursive;*/
   text-align: center;
+  font-family: 'clashFont';
 }
 
 /*clash of clans logo in the top left corner*/
