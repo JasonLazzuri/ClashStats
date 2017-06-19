@@ -27,10 +27,12 @@ main {
   margin: auto;
 }
 
-#tweet{
+#clash{
   width: 300px;
-  position: relative;
-    left: 50px;
   margin: 20px;
+}
 
+#supercell{
+  width: 300px;
+  margin: 20px;
 }
