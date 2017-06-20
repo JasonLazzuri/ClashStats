@@ -1,0 +1,43 @@
+img{
+  width: 450px;
+  display: block;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'clashFont';
+  src: url('../webfont.ttf')  format('truetype');
+}
+
+h2{
+  /*font-family: 'Bungee Shade', cursive;*/
+  text-align: center;
+  font-family: 'clashFont';
+}
+
+h3{
+  font-family: 'clashFont';
+}
+
+/*clash of clans logo in the top left corner*/
+#home{
+  width: 150px;
+  position: absolute;
+  left: -180px;
+
+}
+
+#button{
+  display: block;
+  margin: auto;
+}
+
+#clash{
+  width: 300px;
+  margin: 20px;
+}
+
+#supercell{
+  width: 300px;
+  margin: 20px;
+}

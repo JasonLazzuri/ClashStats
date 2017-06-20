@@ -27,17 +27,9 @@ h3{
 
 }
 
-/*footer*/
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+.page-footer{
+    margin-top: 150px;
 }
-
-main {
-  flex: 1 0 auto;
-}
-/*end footer*/
 
 
 #button{

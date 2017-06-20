@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'clashFont';
+  src: url('../webfont.ttf')  format('truetype');
+}
+
+h1 {
+  font-family: clashfont;
+  text-align: center;
+}
+
+/*footer*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+/*end footer*/
+
+#stats {
+    background: #000;
+    float: left;
+    height: 24vw;
+    margin: 1%;
+    width: 23%;
+}
+
+#shield {
+  margin-top: 50px;
+  margin-bottom: -80px;
+  width: 400px;
+}
+
+img {
+  width: 65%;
+  display: block;
+  margin: auto;
+  margin-bottom: -30px;
+  margin-top: -30px;
+}
+
+h1, h3, h5{
+  text-align: center;
+  font-family: clashfont;
+  opacity: 1;
+}
+.info-badge {
+
+display: block;
+position: relative;
+width: 100%;
+border: 1px solid #CCC;
+border-radius: 4px;
+padding-top: 8px;
+margin-top: 5px;
+z-index: 1;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.row {
+  text-align: center;
+  font-weight: bold;
+}
+
+.icon{
+  width: 100px;
+  /*margin: -22px;*/
+  margin: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 90%;
+
+}
+
+.row .col{
+  padding: 0;
+}

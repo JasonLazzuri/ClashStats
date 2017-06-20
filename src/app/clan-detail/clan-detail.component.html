@@ -1,0 +1,105 @@
+<div class="container">
+  <h1>Clan Detail</h1>
+
+  <img id="shield" src="../../assets/images/artAssets/Shields/shield1.png" alt="" />
+
+  <h3>Clan Name: IronPigs 226</h3>
+  <h5>Clan Slogan: 🇺🇸👊 inactive adults, level 100+, some limits on requests, heroes 20+
+</h5>
+  <h5>Clan Level: 9</h5>
+  <hr>
+  <div class="row">
+    <div class="col s2 info-badge"><span class="flow-text"><b>Global<br>Rank</b></span></div>
+    <div class="col s2 info-badge"><span class="flow-text"><b>War<br> Win Streak</b></span></div>
+    <div class="col s2 info-badge "><span class="flow-text"><b>War <br>Wins</b></span></div>
+    <div class="col s2 info-badge "><span class="flow-text"><b>Clan<br>Trophies</b></span></div>
+    <div class="col s2 info-badge "><span class="flow-text"><b>Troops<br>Donated</b></span></div>
+    <div class="col s2 info-badge "><span class="flow-text"><b>Troops<br>Received</b></span></div>
+  </div>
+  <div class="row">
+    <div class="col s2 "><span class="flow-text">500</span></div>
+    <div class="col s2 "><span class="flow-text">36</span></div>
+    <div class="col s2 "><span class="flow-text">20</span></div>
+    <div class="col s2 "><span class="flow-text">51</span></div>
+    <div class="col s2 "><span class="flow-text">472</span></div>
+    <div class="col s2 "><span class="flow-text">621</span></div>
+  </div>
+</div>
+
+  <div class="container">
+  <hr>
+  <h3>Clan Members</h3>
+  <div class="row">
+    <div class="col s2 "><span class="flow-text">Player Name</span></div>
+    <div class="col s2 "><span class="flow-text">Experience Level</span></div>
+    <div class="col s2 "><span class="flow-text">Attack Wins</span></div>
+    <div class="col s2 "><span class="flow-text">Defense Wins</span></div>
+    <div class="col s2 "><span class="flow-text">Trophies</span></div>
+    <div class="col s2 "><span class="flow-text">Versus Trophies</span></div>
+  </div>
+
+  <!-- loop through the clan members -->
+  <div *ngFor="let member of members" class="row">
+    <div class="col s2 "><span class="flow-text">{{member.name}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{member.experience}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{member.attackWins}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{members.defenseWins}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{members.trophies}}</span></div>
+    <div class="col s2 "><span class="flow-text">member.vsTrophies</span></div>
+  </div>
+</div>
+
+
+<!-- //Image Asset
+//town Hall Level
+
+//EXP LEVEL
+//TROPHY
+//WAR STARS
+//ATTACK WINS
+//DEFENSE WINS
+//TROOPS DONATED
+//TROOPS RECEIVED
+
+//**TROOP SECTION**
+//SPELLS
+//HEROES
+
+//**PLAYER BEST**
+// HIGHEST TROPHY LEVEL
+// BEST RANK IN A CLAN
+
+//**CLAN INFORMATION**
+//RANK IN CLAN
+//ROLE IN CLAN
+
+//PLAYER ACHIEVEMENTS -->
+
+
+<!-- // clan points (trophies)
+// Clan versus points
+// status (i.e invite only)
+
+//war win streak
+
+//**CLANS RANKINGS**
+//Global Rank
+//Current War Win Streak
+//  -Global
+//  -International
+//Total War Wins
+//  -Global
+//  -International
+
+//**CLANS BEST (Different Section)**
+//Clan Points (Trophies)
+//Clan Versus Points
+//War WIn Streak
+
+//**CLANS Members (Different Section)**
+//Experience
+//Name
+//Troops Donated
+//Trophies
+//Attack Wins
+//Defense Wins -->
