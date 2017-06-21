@@ -3,9 +3,9 @@
 
   <img src="../../assets/images/artAssets/Characters/Giant.png" alt="" />
 
-  <h3>Player Name</h3>
-  <h5>Town Hall Level: 5</h5>
-  <h5>Player Level: 100</h5>
+  <h3>Name: {{data?.name}}</h3>
+  <h5>Townhall Level: {{data?.townHallLevel}}</h5>
+  <h5>Experience Level: {{data?.expLevel}}</h5>
   <hr>
   <div class="row">
     <div class="col s2 info-badge"><span class="flow-text"><b>Trophy<br>Count</b></span></div>
@@ -16,12 +16,12 @@
     <div class="col s2 info-badge "><span class="flow-text"><b>Troops<br>Received</b></span></div>
   </div>
   <div class="row">
-    <div class="col s2 "><span class="flow-text">500</span></div>
-    <div class="col s2 "><span class="flow-text">36</span></div>
-    <div class="col s2 "><span class="flow-text">20</span></div>
-    <div class="col s2 "><span class="flow-text">51</span></div>
-    <div class="col s2 "><span class="flow-text">472</span></div>
-    <div class="col s2 "><span class="flow-text">621</span></div>
+    <div class="col s2 "><span class="flow-text">{{data?.trophies}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{data?.warStars}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{data?.attackWins}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{data?.defenseWins}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{data?.donations}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{data?.donationsReceived}}</span></div>
   </div>
 </div>
 
@@ -30,45 +30,28 @@
     <h3>Troops</h3>
   <div class="row">
     <div class="col m12">
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_archer.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_barbarian.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_giant.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_goblin.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_wallbreaker.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_balloon.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_wizard.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_healer.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_dragon.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_pekka.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_babydragon.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_minion.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_miner.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_valkyrie.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_witch.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_golem.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_bowler.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_hogrider.png" alt="" />
-      <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_lavahound.png" alt="" />
+      <div class="col" *ngFor='let troop of data?.troops'>
+        <div *ngIf='troop.village!="builderBase"'>
+          <img class="icon" src="../../assets/images/artAssets/TroopIcons/{{troop.name}}.png" alt="" />
+          <h5 class='level'>{{troop.level}}</h5>
+        </div>
+      </div>
     </div>
   </div>
   <h3>Spells</h3>
   <div class="row">
-    <img class="icon col" src="../../assets/images/artAssets/spells/Lightning_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Heal_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Rage_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Jump_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Freeze_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Clone_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Poison_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Earthquake_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Haste_icon.png" alt="" />
-    <img class="icon col" src="../../assets/images/artAssets/spells/Skeleton_icon.png" alt="" />
+    <div class="col" *ngFor='let spell of data?.spells'>
+      <img class="icon" src="../../assets/images/artAssets/spells/{{spell.name}}.png" alt="" />
+      <h5 class='level'>{{spell.level}}</h5>
+    </div>
   </div>
+
 <h3>Heros</h3>
 <div class="row">
-  <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_archerQueen_profile.png" alt="" />
-  <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_barbarianKing_profile.png" alt="" />
-  <img class="icon col" src="../../assets/images/artAssets/TroopIcons/icon_grandwarden.png" alt="" />
+  <div class="col" *ngFor='let hero of data?.heroes'>
+    <img class="icon" src="../../assets/images/artAssets/TroopIcons/{{hero.name}}.png" alt="" />
+    <h5 class='level'>{{hero.level}}</h5>
+  </div>
 </div>
 
 
