@@ -41,3 +41,42 @@ h3{
   width: 300px;
   margin: 20px;
 }
+
+.parallax {
+  position: relative;
+    /* The image used */
+    background-image: url('http://www.onehiveclan.com/uploads/2/8/8/6/28864503/wiz_bunny_hd.jpg');
+
+    /* Full height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.white{
+  background-color: white;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+.parallax2 {
+  position: relative;
+    /* The image used */
+    background-image: url('http://www.onehiveclan.com/uploads/2/8/8/6/28864503/wiz_bunny_hd.jpg');
+
+    /* Full height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
