@@ -3,10 +3,9 @@
 
   <img id="shield" src="../../assets/images/artAssets/Shields/shield1.png" alt="" />
 
-  <h3>Clan Name: IronPigs 226</h3>
-  <h5>Clan Slogan: 🇺🇸👊 inactive adults, level 100+, some limits on requests, heroes 20+
-</h5>
-  <h5>Clan Level: 9</h5>
+  <h3>Clan Name: {{data?.name}}</h3>
+  <h5>Clan Slogan: {{data?.description}}</h5>
+  <h5>Clan Level: {{data?.clanLevel}}</h5>
   <hr>
   <div class="row">
     <div class="col s2 info-badge"><span class="flow-text"><b>Global<br>Rank</b></span></div>
@@ -18,8 +17,8 @@
   </div>
   <div class="row">
     <div class="col s2 "><span class="flow-text">500</span></div>
-    <div class="col s2 "><span class="flow-text">36</span></div>
-    <div class="col s2 "><span class="flow-text">20</span></div>
+    <div class="col s2 "><span class="flow-text">{{data?.warWinStreak}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{data?.warWins}}</span></div>
     <div class="col s2 "><span class="flow-text">51</span></div>
     <div class="col s2 "><span class="flow-text">472</span></div>
     <div class="col s2 "><span class="flow-text">621</span></div>
@@ -39,13 +38,13 @@
   </div>
 
   <!-- loop through the clan members -->
-  <div *ngFor="let member of members" class="row">
+  <div *ngFor="let member of data?.memberList" class="row">
     <div class="col s2 "><span class="flow-text">{{member.name}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{member.experience}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{member.attackWins}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{members.defenseWins}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{members.trophies}}</span></div>
-    <div class="col s2 "><span class="flow-text">member.vsTrophies</span></div>
+    <div class="col s2 "><span class="flow-text">{{member.expLevel}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{member.name}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{member.name}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{member.trophies}}</span></div>
+    <div class="col s2 "><span class="flow-text">{{member.versusTrophies}}</span></div>
   </div>
 </div>
 
