@@ -1,0 +1,6 @@
+{
+   "/api": {
+      "target": "https://api.clashofclans.com/v1/players/LYC2882J",
+      "secure": false
+   }
+}
