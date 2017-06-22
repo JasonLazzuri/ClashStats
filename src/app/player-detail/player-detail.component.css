@@ -6,6 +6,12 @@ img {
   margin-top: -30px;
 }
 
+#league{
+  width:30px;
+  display: inline;
+  vertical-align:middle;
+}
+
 h1, h3, h5{
   text-align: center;
   font-family: clashfont;
