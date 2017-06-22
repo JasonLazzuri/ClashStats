@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Clan Detail</h1>
+
 
   <img id="shield" src="../../assets/images/artAssets/Shields/shield1.png" alt="" />
 
@@ -23,30 +23,39 @@
     <div class="col s2 "><span class="flow-text">472</span></div>
     <div class="col s2 "><span class="flow-text">621</span></div>
   </div>
-</div>
-
-  <div class="container">
   <hr>
-  <h3>Clan Members</h3>
-  <div class="row">
-    <div class="col s2 "><span class="flow-text">Player Name</span></div>
-    <div class="col s2 "><span class="flow-text">Experience Level</span></div>
-    <div class="col s2 "><span class="flow-text">Attack Wins</span></div>
-    <div class="col s2 "><span class="flow-text">Defense Wins</span></div>
-    <div class="col s2 "><span class="flow-text">Trophies</span></div>
-    <div class="col s2 "><span class="flow-text">Versus Trophies</span></div>
+</div>
+  <div class="container z-depth-4" style="padding:20px;">
+    <img id="healer" src="../../assets/images/artAssets/Characters/Healer.png" alt="" />
+
+    <h3 >Clan Members</h3>
+    <div class="row">
+      <div class="col s2 "><span class="flow-text">Player Name</span></div>
+      <div class="col s2 "><span class="flow-text">Experience Level</span></div>
+      <div class="col s2 "><span class="flow-text">Donated Troops</span></div>
+      <div class="col s2 "><span class="flow-text">Donations <br>Received</span></div>
+      <div class="col s2 "><span class="flow-text">Trophies</span></div>
+      <div class="col s2 "><span class="flow-text">Versus Trophies</span></div>
+    </div>
+
+    <!-- loop through the clan members -->
+    <div *ngFor="let player of data?.memberList" class="row hoverable">
+      <div class="col s2 "><span class="flow-text"><a href="player/{{player.tag}}">{{player.name}}</a></span></div>
+      <div class="col s2 "><span class="flow-text">{{player.expLevel}}</span></div>
+      <div class="col s2 "><span class="flow-text">{{player.donations}}</span></div>
+      <div class="col s2 "><span class="flow-text">{{player.donationsReceived}}</span></div>
+      <div class="col s2 "><span class="flow-text">{{player.trophies}}</span></div>
+      <div class="col s2 "><span class="flow-text">{{player.versusTrophies}}</span></div>
+    </div>
   </div>
 
-  <!-- loop through the clan members -->
-  <div *ngFor="let member of data?.memberList" class="row">
-    <div class="col s2 "><span class="flow-text">{{member.name}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{member.expLevel}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{member.name}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{member.name}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{member.trophies}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{member.versusTrophies}}</span></div>
-  </div>
-</div>
+<img id="barb" src="../../assets/images/artAssets/barb?.png" alt="" />
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <!-- //Image Asset

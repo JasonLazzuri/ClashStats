@@ -19,13 +19,16 @@ export class PlayerDetailComponent implements OnInit {
   imgArray = [
     '../../assets/images/artAssets/Characters/Giant.png',
     '../../assets/images/artAssets/Characters/PEKKA.png',
-    '../../assets/images/artAssets/Characters/Golem.png',
-    '../../assets/images/artAssets/Characters/Witch.png',
+    '../../assets/images/artAssets/Characters/Balloon.png',
+    '../../assets/images/artAssets/Characters/HogRider.png',
     '../../assets/images/artAssets/Characters/Dragon.png'
   ];
   imgStr = this.imgArray[Math.floor(Math.random()*this.imgArray.length)];
+  clanTag : string;
+
 
   ngOnInit() {
+
     this.route.params.forEach((urlParameters) => {
       this.playerId = urlParameters['id'];
     });
@@ -41,7 +44,8 @@ export class PlayerDetailComponent implements OnInit {
      this.data.heroes.forEach(function(hero){
        hero.name = 'icon_'+hero.name.replace(/\s/g, '').toLowerCase()+'_profile';
      })
-     console.log(this.data)
+     this.clanTag = this.data.clan.tag.substr(1);
+     console.log(this.clanTag)
    })
   }
 

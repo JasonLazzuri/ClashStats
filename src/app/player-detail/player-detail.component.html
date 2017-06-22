@@ -1,7 +1,7 @@
 <div class="container">
-  <h1>Player Detail</h1>
 
-  <img src="{{imgStr}}" alt="" />
+
+  <img id="character"src="{{imgStr}}" alt="" />
 
   <h3>Name: {{data?.name}}</h3>
   <h5>Tag: {{data?.tag}}</h5>
@@ -10,8 +10,9 @@
   <h5 *ngIf='data?.league'>League: {{data?.league.name}}<img id="league" src="{{data?.league.iconUrls.medium}}" alt=""></h5>
   </div>
 
-  <h5>Townhall Level: {{data?.townHallLevel}}</h5>
-  <h5>Experience Level: {{data?.expLevel}}</h5>
+  <h5>Townhall Level: {{data?.townHallLevel}} <img id="league"  src="../../assets/images/artAssets/TownHall/{{data?.townHallLevel}}.png" alt="" /></h5>
+  <h5>Experience Level: {{data?.expLevel}}<img id="XP"  src="../../assets/images/artAssets/XP.png" alt="" /></h5>
+  <h5>Clan Name: {{data?.clan.name}} <a href="/clan/{{clanTag}}">{{data?.clan.tag}}</a></h5>
   <hr>
   <div class="row">
     <div class="col s2 info-badge"><span class="flow-text"><b>Trophy<br>Count</b></span></div>
@@ -22,8 +23,8 @@
     <div class="col s2 info-badge "><span class="flow-text"><b>Troops<br>Received</b></span></div>
   </div>
   <div class="row">
-    <div class="col s2 "><span class="flow-text">{{data?.trophies}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{data?.warStars}}</span></div>
+    <div class="col s2 "><span class="flow-text"><img id="XP"  src="../../assets/images/artAssets/trophy.png" alt="" />{{data?.trophies}}</span></div>
+    <div class="col s2 "><span class="flow-text"><img id="XP"  src="../../assets/images/artAssets/stars.png" alt="" />{{data?.warStars}}</span></div>
     <div class="col s2 "><span class="flow-text">{{data?.attackWins}}</span></div>
     <div class="col s2 "><span class="flow-text">{{data?.defenseWins}}</span></div>
     <div class="col s2 "><span class="flow-text">{{data?.donations}}</span></div>
@@ -38,8 +39,8 @@
     <div class="col s2 info-badge"><span class="flow-text"><b>Best<br> Versus<br> Trophies</b></span></div>
   </div>
   <div class="row">
-    <div class="col s2"><span class="flow-text">{{data?.bestTrophies}}</span></div>
-    <div class="col s2 "><span class="flow-text">{{data?.bestVersusTrophies}}</span></div>
+    <div class="col s2"><span class="flow-text"><img id="XP"  src="../../assets/images/artAssets/trophy.png" alt="" />{{data?.bestTrophies}}</span></div>
+    <div class="col s2 "><span class="flow-text"><img id="XP"  src="../../assets/images/artAssets/trophy.png" alt="" />{{data?.bestVersusTrophies}}</span></div>
   </div>
 
 </div>
@@ -61,7 +62,7 @@
     <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[6].value}}</span></div>
     <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[9].value}}/{{data?.achievements[9].target}}</span></div>
     <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[10].value}}</span></div>
-      <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[16].value}}/{{data?.achievements[16].target}}</span></div>
+    <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[16].value}}/{{data?.achievements[16].target}}</span></div>
   </div>
 
 </div>

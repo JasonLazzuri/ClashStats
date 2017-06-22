@@ -6,8 +6,22 @@ img {
   margin-top: -30px;
 }
 
+
+#character {
+  width: 65%;
+  display: block;
+  margin: auto;
+  margin-bottom: -30px;
+  margin-top: -45px;
+}
+
 #league{
-  width:30px;
+  width:80px;
+  display: inline;
+  vertical-align:middle;
+}
+#XP{
+  width: 30px;
   display: inline;
   vertical-align:middle;
 }
@@ -16,6 +30,7 @@ h1, h3, h5{
   text-align: center;
   font-family: clashfont;
   opacity: 1;
+  padding: 15px;
 }
 .info-badge {
 

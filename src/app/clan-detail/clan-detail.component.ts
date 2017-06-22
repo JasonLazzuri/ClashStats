@@ -16,6 +16,7 @@ export class ClanDetailComponent implements OnInit {
   clanId: string;
   foundClan: any;
   data: any;
+  playerTag : string;
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
@@ -24,8 +25,11 @@ export class ClanDetailComponent implements OnInit {
     this.apiService.call(this.clanId, 'clan').subscribe(dataLastEmittedFromObserver => {
      this.foundClan = dataLastEmittedFromObserver;
      this.data = JSON.parse(this.foundClan._body);
-     console.log(this.data)
+     this.data.memberList.forEach(function(member){
+       member.tag = member.tag.substr(1);
+     })
    })
+
   }
 
 }

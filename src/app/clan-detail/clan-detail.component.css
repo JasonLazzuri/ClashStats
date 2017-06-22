@@ -3,6 +3,10 @@
   src: url('../webfont.ttf')  format('truetype');
 }
 
+.hoverable:hover{
+  background-color: #bbdefb;
+}
+
 h1 {
   font-family: clashfont;
   text-align: center;
@@ -78,4 +82,14 @@ padding-right: 5px;
 
 .row .col{
   padding: 0;
+}
+
+#barb{
+  width: 300px;
+  float: left;
+  position: inherit;
+}
+
+#healer{
+  width: 300px;
 }
