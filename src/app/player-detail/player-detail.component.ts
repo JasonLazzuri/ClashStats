@@ -41,7 +41,7 @@ export class PlayerDetailComponent implements OnInit {
      this.data.heroes.forEach(function(hero){
        hero.name = 'icon_'+hero.name.replace(/\s/g, '').toLowerCase()+'_profile';
      })
-     console.log(this.data.achievements[9])
+     console.log(this.data)
    })
   }
 

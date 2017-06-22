@@ -5,10 +5,10 @@
 
   <h3>Name: {{data?.name}}</h3>
   <h5>Tag: {{data?.tag}}</h5>
+
   <div class="league">
   <h5 *ngIf='data?.league'>League: {{data?.league.name}}<img id="league" src="{{data?.league.iconUrls.medium}}" alt=""></h5>
   </div>
-
 
   <h5>Townhall Level: {{data?.townHallLevel}}</h5>
   <h5>Experience Level: {{data?.expLevel}}</h5>
@@ -34,8 +34,8 @@
     <h3>Player Bests</h3>
   <hr>
   <div class="row">
-    <div class="col s2 info-badge"><span class="flow-text"><b>Highest Trophy<br>Count</b></span></div>
-    <div class="col s2 info-badge"><span class="flow-text"><b>Best Versus<br> Trophies</b></span></div>
+    <div class="col s2 info-badge"><span class="flow-text"><b>Highest<br> Trophy<br>Count</b></span></div>
+    <div class="col s2 info-badge"><span class="flow-text"><b>Best<br> Versus<br> Trophies</b></span></div>
   </div>
   <div class="row">
     <div class="col s2"><span class="flow-text">{{data?.bestTrophies}}</span></div>
@@ -52,12 +52,16 @@
     <div class="col s2 info-badge"><span class="flow-text"><b>Gold<br> Looted</b></span></div>
     <div class="col s2 info-badge"><span class="flow-text"><b>Elixir<br> Looted</b></span></div>
     <div class="col s2 info-badge"><span class="flow-text"><b>Walls<br> Destroyed</b></span></div>
+    <div class="col s2 info-badge"><span class="flow-text"><b>Town Halls<br> Destroyed</b></span></div>
+      <div class="col s2 info-badge"><span class="flow-text"><b>Dark Elixer Looted</b></span></div>
   </div>
   <div class="row">
-    <div class="col s2"><span class="flow-text">{{data?.achievements[3].value}}/500</span></div>
+    <div class="col s2"><span class="flow-text">{{data?.achievements[3].value}}/{{data?.achievements[3].target}}</span></div>
     <div class="col s2 "><span class="flow-text" style="font-size:18px;">{{data?.achievements[5].value}}</span></div>
     <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[6].value}}</span></div>
-    <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[9].value}}/2000</span></div>
+    <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[9].value}}/{{data?.achievements[9].target}}</span></div>
+    <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[10].value}}</span></div>
+      <div class="col s2"><span class="flow-text" style="font-size:18px;">{{data?.achievements[16].value}}/{{data?.achievements[16].target}}</span></div>
   </div>
 
 </div>
