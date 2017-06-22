@@ -16,6 +16,14 @@ export class PlayerDetailComponent implements OnInit {
   playerId: any;
   foundPlayer: any;
   data: any;
+  imgArray = [
+    '../../assets/images/artAssets/Characters/Giant.png',
+    '../../assets/images/artAssets/Characters/PEKKA.png',
+    '../../assets/images/artAssets/Characters/Golem.png',
+    '../../assets/images/artAssets/Characters/Witch.png',
+    '../../assets/images/artAssets/Characters/Dragon.png'
+  ];
+  imgStr = this.imgArray[Math.floor(Math.random()*this.imgArray.length)];
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {

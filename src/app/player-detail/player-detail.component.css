@@ -54,8 +54,11 @@ padding-right: 5px;
   position: absolute;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  left: 42%;
-  top: 35%;
+  left: 0;
+  right: 0;
+  top: 32%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*#text{

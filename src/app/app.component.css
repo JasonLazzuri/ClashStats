@@ -24,7 +24,12 @@ h3{
   width: 150px;
   position: absolute;
   left: -180px;
+  margin-bottom: 10px;
 
+}
+
+#top-bar{
+  padding-bottom: 75px;
 }
 
 .page-footer{

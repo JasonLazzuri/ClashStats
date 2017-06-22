@@ -31,15 +31,20 @@ h3{
   display: block;
   margin: auto;
 }
-
+#twitter-row{
+  text-align: center;
+}
 #clash{
   width: 300px;
-  margin: 20px;
+  margin: auto;
+  display: inline-block;
 }
 
 #supercell{
   width: 300px;
-  margin: 20px;
+  margin: auto;
+  display: inline-block;
+  margin: 50px 50px 0px 50px;
 }
 
 .parallax {

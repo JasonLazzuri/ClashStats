@@ -1,12 +1,12 @@
 <div class="container">
   <h1>Player Detail</h1>
 
-  <img src="../../assets/images/artAssets/Characters/Giant.png" alt="" />
+  <img src="{{imgStr}}" alt="" />
 
   <h3>Name: {{data?.name}}</h3>
   <h5>Tag: {{data?.tag}}</h5>
   <div class="league">
-  <h5>League: {{data?.league.name}}<img id="league" src="{{data?.league.iconUrls.medium}}" alt=""></h5>
+  <h5 *ngIf='data?.league'>League: {{data?.league.name}}<img id="league" src="{{data?.league.iconUrls.medium}}" alt=""></h5>
   </div>
 
 
@@ -83,7 +83,7 @@
     </div>
   </div>
 
-<h3>Heros</h3>
+<h3>Heroes</h3>
 <div class="row">
   <div class="col" *ngFor='let hero of data?.heroes'>
     <img class="icon" src="../../assets/images/artAssets/TroopIcons/{{hero.name}}.png" alt="" />
