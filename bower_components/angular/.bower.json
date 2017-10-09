@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "./angular.js",
   "ignore": [],
-  "dependencies": {},
+  "dependencies": {"angular-cli": "1.0.0-beta.28.3"},
   "homepage": "https://github.com/angular/bower-angular",
   "_release": "1.6.4",
   "_resolution": {

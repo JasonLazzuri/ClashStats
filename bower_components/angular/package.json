@@ -4,6 +4,7 @@
   "description": "HTML enhanced for web apps",
   "main": "index.js",
   "scripts": {
+    "postinstall": "ng build --aot -prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
